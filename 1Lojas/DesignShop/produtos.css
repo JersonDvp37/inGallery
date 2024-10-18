@@ -1,0 +1,388 @@
+:root{
+    --primaria: #00ffcc;
+    --fontColor: #003333; /*font*/
+    --headerBckg: #ccffff;
+    --white: #f2fff9;
+    --pureWhite: #ffffff;
+    --barColor: #cdcdcd;
+    --formas: #00cc99;/*icones*/
+    --mozArt-bck: #001f1f;
+    --black-opacity: #00000080;
+    --boxShadow: #b9dada;
+    color: #00ffcc;/*formas*/
+}
+/*POPULAR PRODUCTS*/
+h2{
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 80px;
+    color: var(--fontColor);
+}
+.maisProd{
+    position: absolute;
+    list-style: none;
+    margin-top: 485px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.maisProd2{
+    position: relative;
+    list-style: none;
+    margin-top: 795px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.maisProd4{
+    position: relative;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.prodPopulares{
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 452px;
+    margin-left: 110px;
+    color: var(--fontColor);
+}
+.designGrafico, .plantas3D, .designCamisetes, .colares, 
+.celulares, .books{
+    position: absolute;
+    width: 225px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+    object-position: 30% 30%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px;
+    color: rgb(177, 255, 220);
+}
+.prod1, .prod2, .prod3, .prod4, .prod5, .prod6{
+    width: 235px;
+    height: 300px;
+    border-radius: 25px;
+    background: linear-gradient(to top, var(--pureWhite), var(--white));
+    color: var(--pureWhite);
+    box-shadow: 0px 5px 15px var(--boxShadow);
+    border: 1px;
+    border-color: #e7e7e7;
+    border-style: soli;
+}
+.prod1:hover, .prod2:hover, .prod3:hover, .prod4:hover, .prod5:hover, .prod6:hover{
+    color: rgb(1, 158, 124);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border: 1px;
+    border-style: soli;
+    border-color: rgb(0, 255, 200);
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px var(--barColor);
+}
+
+/*BUTTOES DE LINKS EXPLORAR*/
+.Exp, .Exp2, .Exp3, .Exp4, .Exp5{
+    position: absolute;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 266px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: var(--explorar);
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    text-decoration: none;
+    transition: 1s;
+}
+.Exp:hover, .Exp2:hover, .Exp3:hover, .Exp4:hover, .Exp5:hover{
+    position: absolute;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 266px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color:  var(--white);
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    box-shadow: 0px 0px 0px;
+}
+.Exp6{
+    position: absolute;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 266px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color:  rgb(0, 150, 117);
+    background-color: rgb(0, 255, 200);
+}
+.Exp6:hover{
+    position: absolute;
+    padding: 5px 42px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 266px;
+    margin-left: 51px;
+    border-radius: 3px;
+    color:  rgb(0, 150, 117);
+    background-color: rgb(0, 255, 200);
+    box-shadow: 0px 0px 0px;
+}
+
+/*DESCRICAO DE CADA PROD ACIMA: NOME E CATEGORIA*/
+.prodDsc1{
+   position: absolute;
+   list-style: none;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   color:   rgb(0, 112, 88);
+   margin-top: 220px;
+   margin-left: 10px;
+}
+.catDsc1{
+    position: absolute;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -15px;
+}
+.prodDsc2{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 220px;
+    margin-left: 10px;
+ }
+ .catDsc2{
+     position: absolute;
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-left: 15px;
+ }
+
+ .prodDsc3{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 220px;
+   margin-left: 10px;
+ }
+ .catDsc3{
+     position: absolute;
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-left: -15px;
+ }
+ .prodDsc4{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 220px;
+   margin-left: 10px;
+ }
+ .catDsc4{
+     position: absolute;
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-left: -15px;
+ }
+ .prodDsc5{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 220px;
+    margin-left: 10px;
+ }
+ .catDsc5{
+     position: absolute;
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-left: -15px;
+}
+.prodDsc6{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 65px;
+}
+.catDsc6{
+    position: absolute;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -15px;
+}
+
+/*Templates*/
+.templates{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-left: 110px;
+    color: var(--fontColor);
+}
+.templates1{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: -25px;
+    margin-left: 110px;
+    color: var(--fontColor);
+}
+.maisProd3{
+    position: relative;
+    list-style: none;
+    margin-top: 80px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.maisProd33{
+    position: relative;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.imgtemp1, .imgtemp2, .imgtemp3, .imgtemp4, .imgtemp5, .imgtemp6{
+    position: absolute;
+    width: 185px;
+    height: 160px;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+    object-position: 30% 30%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px;
+    color: rgb(177, 255, 220);
+}
+.temp1, .temp2, .temp3, .temp4, .temp5, .temp6{
+    width: 195px;
+    height: 260px;
+    background: linear-gradient(to top, var(--pureWhite), var(--white));
+    box-shadow: 0px 1px 2px;
+    color: var(--pureWhite);
+    box-shadow: 0px 0px 3px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px var(--boxShadow);
+}
+.temp1:hover, .temp2:hover, .temp3:hover, .temp4:hover, .temp5:hover, .temp6:hover{
+    color: rgb(1, 158, 124);
+    box-shadow: 0px 1px 2px;
+    cursor: pointer;
+    border: 0px;
+    border-style: solid;
+    border-color: rgb(0, 255, 200);
+    box-shadow: 0px 5px 10px var(--barColor);
+}
+
+/*BUTTOES DE LINKS EXPLORAR*/
+.tempExp, .tempExp2, .tempExp3, .tempExp4, .tempExp5,.tempExp6{
+    position: absolute;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 223px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: var(--explorar);
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    text-decoration: none;
+}
+.tempExp:hover, .tempExp2:hover, .tempExp3:hover, .tempExp4:hover, 
+.tempExp5:hover, .tempExp6:hover{
+    position: absolute;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 223px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color:  var(--white);
+    background-color: var(--formas);
+    box-shadow: 0px 0px 0px;
+}
+
+/*DESCRICAO DE CADA PROD ACIMA: NOME E CATEGORIA*/
+.prodtempDsc1{
+   position: absolute;
+   list-style: none;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   color:rgb(0, 112, 88);
+   margin-top: 180px;
+   margin-left: 10px;
+}
+.prodtempDsc2{
+    list-style: none;
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 10px;
+}
+.prodtempDsc3{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 10px;
+}
+.prodtempDsc4{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 10px;
+}
+.prodtempDsc5{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 10px;
+}
+.prodtempDsc6{
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:   rgb(0, 112, 88);
+    margin-top: 180px;
+    margin-left: 10px;
+}
+
+ 

@@ -1,0 +1,159 @@
+:root{
+    --primaria: #00ffcc;
+    --fontColor: #003333; /*font*/
+    --headerBckg: #ccffff;
+    --white: #f2fff9;
+    --barColor: #cdcdcd;
+    --formas: #00cc99;/*icones*/
+    --mozArt-bck: #001f1f;
+    --black-opacity: #00000080;
+    --pureWhite: #ffffff;
+    --boxShadow: #b9dada;
+    color: #00ffcc;/*formas*/
+}
+
+.second-navbar-conteiner{
+    position: fixed;
+    box-shadow: 0px 0px 10px;
+    animation-duration: 1s;
+    color: rgb(0, 255, 204, 0.3);
+    z-index: 50;
+    box-shadow: 0px 2px 6px rgb(223, 227, 227, 0.5);
+}
+.content{
+    transition: 1s;
+}
+.mensagens_frame, .tendencias_frame, .eventos_frame, .galerias_frame,
+.portifolio_frame, .contactos_frame, .sobre_frame{
+    position: absolute;
+    width: 1220px;
+    height: 600px;
+    margin-top: 70px;
+    margin-left: 110px;
+    border-radius: 10px;
+    background-color: var(--pureWhite);
+    box-shadow: 0px 0px 0px #a0b1b1;
+    color: var(--primaria);
+    transition: 1s;
+    z-index: 2;
+    display: none;
+}
+.fechar, .fechar1, .fechar2, .fechar3, .fechar4, .fechar5, .fechar6, .fechar7{
+    position: absolute;
+    width: 30px;
+    padding: 5px 5px;
+    background-color: var(--formas);
+    margin-left: 1185px;
+    border-radius: 5px;
+    margin-top: 5px; 
+
+}
+.fechar:hover, .fechar1:Hover, .fechar3:Hover, .fechar4:Hover, .fechar5:Hover, 
+.fechar6:Hover, .fechar7:hover{
+    background-color: var(--primaria);
+    cursor: pointer;
+}
+@keyframes showSideBar {
+    from{ width: 67px;}
+    top{ width: 245px;}
+}
+.sideBar_btn{
+    position: fixed;
+    height: 50px;
+    margin-left: -105px;
+    margin-top: 104px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontColor);
+    transform: rotate(90deg);
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 2px;
+    border-style: solid;
+    border-color: var(--formas);
+    cursor: pointer;
+    animation-duration: 1s;
+    z-index: 2;
+}
+.closeBar{
+    position: absolute;
+    width: 22px;
+    padding: 5px 5px;
+    background-color: var(--formas);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 170px;
+    z-index: 2;
+}
+
+
+/*NOTIFICACAO*/
+.BoxAside{
+    position: absolute;
+    width: 260px;
+    height: 385px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-left: 1070px;
+    background: linear-gradient(to top,  var(--pureWhite), var(--white));
+    box-shadow: 0px 2px 6px rgb(223, 227, 227, 0.5);
+    border-radius: 20px;
+    z-index: 0;
+    overflow: hidden;
+}
+.pubTitle{
+
+    font-size: 15px; 
+    color: var(--fontColor);
+    margin-top: 3px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.boxPub{
+    width: 250px;
+    height: 275px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: var(--mozArt-bck);
+    border-radius: 15px;
+}
+.dropDown_Icon{
+    width: 50px;
+    margin-left: 105px;
+    margin-top: 65px;
+    border-radius: 5px;
+    padding: 2px 15px;
+    background-color: var(--white);
+    /*box-shadow: 0px 0px 5px var(--boxShadow);*/
+}
+.notificacao{
+    position: absolute;
+    width: 35px;
+    margin-left: 1000px;
+    margin-top: 05px;
+    padding: 5px 5px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.notificacao:hover{
+    animation: balancar;
+    animation-name: balancar;
+    animation-duration: 0.4s;
+    rotate: 0deg;
+}
+@keyframes balancar {
+ 
+    10%, 30%{rotate: 15deg;}
+    30%, 50%{rotate: -30deg;}
+    60%, 80%{rotate: -30deg;}
+    80%, 100%{rotate: 20deg;}
+}   
+
+

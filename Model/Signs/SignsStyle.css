@@ -1,0 +1,557 @@
+:root{
+    --primaria: #00ffcc;
+    --fontColor: #003333; /*font*/
+    --headerBckg: #ccffff;
+    --white: #f2fff9;
+    --barColor: #cdcdcd;
+    --formas: #00cc99;/*icones*/
+    --mozArt-bck: #001f1f;
+    --black-opacity: rgba(0, 0, 0, 0.1);
+    --explorar: #009675;
+    --pureWhite: #ffffff;
+    --boxShadow: #b9dada;
+    color: #00ffcc;/*formas*/
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:  #eff5f4;;
+    display: flex;
+    justify-content: center;  
+    
+}
+.logoMz{
+    position: absolute;
+    width: 80px;
+    filter: drop-shadow( 0px 2.5px 1px var(--mozArt-bck));
+    margin-left: -250px;
+    margin-top: 5px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+    filter: blur(2px);
+}
+
+.Box1{
+    width: 800px;
+    height: 400px;
+    background-color: var(--P);
+    right: 100px;
+    box-shadow: 0px 5px 30px var(--boxShadow);
+    background-color: var(--pureWhite);
+    border-radius: 8px;
+    margin-top: 130px;
+}
+.display{
+    display: block;
+    transition: 1s;
+}
+.txtEntrar{
+    position: absolute;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--fontColor);
+    margin-left: 185px;
+    margin-top: 45px;
+}
+.icons{
+    margin-left: 194px;
+}
+div img{
+    width: 25px;
+    margin-top: 81px;
+}
+.iconGoogle{
+    width: 23px;
+}
+
+.contaExistente{
+    position: absolute;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 128px;
+    color: var(--fontColor);
+    margin-left: -174px;
+}
+
+.icons-input{
+    position: absolute; 
+    margin-left: -153px;
+    margin-top: -21px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: 1s;
+}
+.icons-input img{
+    width: 15px;
+}
+.cadeado{
+    margin-top: 42px;
+}
+
+.Box1 .usEmail, .password{
+    width: 260px;
+    border-radius: 4px;
+    padding:  8px 30px;
+    outline: none;
+    background-color: rgba(199, 199, 199, 0.02);
+    border: 2px solid var(--boxShadow);
+    font-size: 15px;
+}
+.Box1 .usEmail:hover, .password:hover{
+    border: 2px solid var(--formas);
+}
+.inputs{
+    position: absolute;
+    margin-left: -162.5px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recuperarSenha{
+    position: absolute;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 270px;
+    color: var(--formas);
+    margin-left: -113px;
+}
+.recuperarSenha:hover{
+    color: var(--fontColor);
+}
+.btn_entrar{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 310px;
+    margin-left: -105px;
+    padding: 8px 58px;
+    border-radius: 50px;
+    color: var(--pureWhite);
+    background-color: var(--formas);
+    outline: none;
+    border: none;
+}
+.btn_entrar:hover{
+    cursor:  pointer;
+    background-color: var(--fontColor);
+    box-shadow: 0px 5px 15px rgb(0, 255, 204, 0.1);
+}
+
+/*SignUp Box*/
+.box_btn{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background-color: var(--mozArt-bck);
+    margin-left: 450px;
+    border-radius: 8px;
+    margin-top: 130px;
+    z-index: 2;
+}
+.titleBox{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 130px;
+    margin-left: 85px;
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.signText{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 180px;
+    margin-left: 57px;
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn_entrar4{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 230px;
+    margin-left: 80px;
+    padding: 8px 58px;
+    border-radius: 50px;
+    color: var(--fontColor);
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    z-index: 2;
+}
+.btn_entrar4:hover{
+    cursor:  pointer;
+    color: var(--white);
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    box-shadow: 0px 0px 15px rgb(0, 255, 204, 0.5);
+    transition: 1s;
+}
+@keyframes loginSlide {
+    from{ margin-left: 450px;}
+    to{margin-left: 0px;}
+}
+
+/*Other Vesion of Slide*/
+.displays2{
+    position: absolute;
+    display: none;
+    margin-left: 450px;
+    transition: 1s;
+}
+.darkBlue_content{
+    position: absolute;
+    width: 400px;  
+}
+.darkBlue_content2{
+    display: none;
+}
+.titleBox2{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 130px;
+    margin-left: 85px;
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.signText2{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 180px;
+    margin-left: 45px;
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn_entrar2{
+    position: absolute; 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 230px;
+    margin-left: 95px;
+    padding: 8px 58px;
+    border-radius: 50px;
+    color: var(--fontColor);
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    z-index: 2;
+}
+.btn_entrar2:hover{
+    cursor:  pointer;
+    color: var(--pureWhite);
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    box-shadow: 0px 0px 15px rgb(0, 255, 204, 0.5);
+    transition: 1s;  
+}
+.txtEntrar2{
+    position: absolute;
+    width: 400px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--fontColor);
+    margin-left: 105px;
+    margin-top: 45px;
+}
+.icons3{
+    margin-left: 194px;
+}
+div img{
+    width: 25px;
+    margin-top: 80px;
+}
+.iconGoogle{
+    width: 23px;
+}
+
+.contaExistente2{
+    position: absolute;
+    width: 300px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 128px;
+    color: var(--fontColor);
+    margin-left: -170px;
+    display: none;
+}
+
+.icons-input3{
+    position: absolute; 
+    margin-left: -150px;
+    margin-top: -57px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.email2{
+    margin-top: 36px;
+}
+.cadeado2{
+    margin-top: 36.5px;
+}
+.cadeado3{
+    margin-top: 37.5px;
+}
+.icons-input3 img{
+    width: 15px;
+}
+
+.Box1 .nome2, .usEmail2, .password2, .senha2, .password3{
+    width: 245px;
+    border-radius: 4px;
+    padding:  8px 30px;
+    outline: none;
+    background-color: rgba(199, 199, 199, 0.02);
+    font-size: 15px;
+    border: 2px solid var(--boxShadow);
+}
+.Box1 .nome2:hover, .usEmail2:hover, .password2:hover, .senha2:hover, .password3:hover{
+    border: 2px solid var(--formas);
+    background-color: var(--pureWhite);
+    box-shadow: 0px 0px 5px rgb(0, 31, 31, 0.1);
+}
+.inputs3{
+    position: absolute;
+    margin-left: -160px;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn_entrar3{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 330px;
+    margin-left: -110px;
+    padding: 6px 50px;
+    border-radius: 50px;
+    color: var(--fontColor);
+    background-color: #68ffe1;
+    outline: none;
+    border: none;
+    border: 2px solid var(--formas);
+}
+.btn_entrar3:hover{
+    cursor:  pointer;
+    background-color: var(--formas);
+    color: var(--pureWhite);
+}
+
+.round-element00{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+    list-style: none;
+    margin-left: -1000px;
+    margin-top: 330px;
+    z-index: -2;
+    opacity: 100%;
+    list-style: none;
+    filter: blur(20px);
+    transform: rotate(50deg);
+    filter: blur(30px);
+}
+.round-element22{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: linear-gradient(to right,  var(--boxShadow), var(--primaria));
+    list-style: none;
+    margin-left: 700px;
+    margin-top: 0px;
+    z-index: -2;
+    transform: rotate(90deg);
+    filter: blur(30px);
+}
+
+/*popup box alert*/
+.BoxMessage{
+    position: absolute;
+    width: 380px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: rgb(192, 255, 215);
+    margin-top: 250px;
+    margin-left: 355px;
+    z-index: 7;
+    /*box-shadow: 0px 2px 2px rgb(0, 31, 31, 0.1);*/
+    border: 0px solid rgba(255, 0, 0, 0.5);
+    display: none;
+}
+.imgAlert{
+    width: 45px;
+    margin-top: 22px;
+    margin-left: 20px;
+    background: none;
+}
+.popupX{
+    position: absolute;
+    width: 15px;
+    margin-top: 5px;
+    margin-left: 295px;
+}
+.popText{
+    position: absolute;
+    width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: 25px;
+    color: rgba(0, 138, 48, 0.924);
+}
+
+/*LOGIN CONFIRMED*/
+.BoxMessage3{
+    position: absolute;
+    width: 380px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: rgb(192, 255, 215);
+    margin-top: 250px;
+    margin-left: -353px;
+    z-index: 7;
+    /*box-shadow: 0px 2px 2px rgb(0, 31, 31, 0.1);*/
+    border: 0px solid rgba(255, 0, 0, 0.5);
+    display: none;
+    overflow: hidden;
+}
+.imgAlert3{
+    width: 45px;
+    margin-top: 22px;
+    margin-left: 20px;
+    background: none;
+}
+.popupX3{
+    position: absolute;
+    width: 15px;
+    margin-top: 5px;
+    margin-left: 295px;
+}
+.popText3{
+    position: absolute;
+    width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: 25px;
+    color: rgba(0, 138, 48, 0.924);
+}
+.popText4{
+    position: absolute;
+    width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: 25px;
+    color: rgba(0, 138, 48, 0.924);
+}
+
+
+/*POP sucessFulnes - acount creation*/
+.BoxMessage2{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 180px;
+    margin-left: 350px;
+    z-index: 7;
+    box-shadow: 0px 5px 15px rgb(0, 31, 31, 0.1);
+    border: 2px solid rgba(0,255, 162);
+    overflow: hidden;
+    display: none;
+}
+.ImgSucess{
+    position: absolute;
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 170px;
+    padding: 5px 5px;
+    border-radius: 50px;  
+}
+.popupX2{
+    position: absolute;
+    width: 15px;
+    margin-top: 5px;
+    margin-left: 583px;
+}
+.popText2{
+    position: absolute;
+    width: 380px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 135px;
+    color: rgba(0,255, 162);
+}
+.popDsc{
+    position: absolute;
+    width: 380px;
+    font-size: 15px;
+    margin-top: 150px;
+    margin-left: 45px;
+    color: var(--fontColor);
+}
+.membrasia{
+    position: absolute;
+    font-size: 11px;
+    margin-top: 180px;
+    margin-left: 166px;
+    color: var(--fontColor);
+    padding: 3px 15px;
+    border-radius: 50px;
+    background: linear-gradient(to left,  var(--boxShadow), var(--primaria));
+}
+.Join_btn2{
+    position: absolute;
+    padding: 5px 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontColor);
+    /*background: linear-gradient(to right,  var(--boxShadow), var(--primaria));*/
+    margin-top: 220px;
+    margin-left: 110px;
+    border: 2px solid rgba(0, 255, 162);
+    box-shadow: 0px 0px 0px rgb(0, 204, 153, 0.5);
+    background-color: white;
+    border-radius: 70px;
+}
+.Join_btn2 a{
+    text-decoration: none;
+    color: var(--fontColor);
+}
+.Join_btn2:hover{
+    padding: 6.5px 51px;
+    border-color: var(--white);
+    /*box-shadow: 0px 0px 0px rgb(0, 204, 153, 0.9);*/
+    color: var(--pureWhite);
+    /*background: linear-gradient(to left,  var(--boxShadow), var(--primaria));*/
+    border: 2px solid rgba(0, 255, 162);
+    background-color: rgba(0, 255, 162);
+    transition: 1s;
+}
+
+
+

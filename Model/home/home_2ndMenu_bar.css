@@ -1,0 +1,173 @@
+:root{
+    --primaria: #00ffcc;
+    --fontColor: #003333; /*font*/
+    --headerBckg: #ccffff;
+    --white: #f2fff9;
+    --barColor: #cdcdcd;
+    --formas: #00cc99;/*icones*/
+    --mozArt-bck: #001f1f;
+    --black-opacity: #00000080;
+    --pureWhite: #ffffff;
+    --boxShadow: #b9dada;
+    color: #00ffcc;/*formas*/
+}
+
+.second-navbar-conteiner{
+    position: fixed;
+    box-shadow: 0px 0px 10px;
+    animation-duration: 1s;
+    color: rgb(0, 255, 204, 0.3);
+    z-index: 7;
+    box-shadow: 0px 0px 15px #a0b1b1;
+    background-color: var(--white);
+}
+.content{
+    transition: 1s;
+}
+.mensagens_frame, .tendencias_frame, .eventos_frame, .galerias_frame,
+.portifolio_frame, .contactos_frame, .sobre_frame{
+    position: absolute;
+    width: 1350px;
+    height: 680px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 0px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 6px;
+    color: var(--primaria);
+    transition: 1s;
+    display: none;
+}
+.fechar, .fechar1, .fechar2, .fechar3, .fechar4, .fechar5, .fechar6, .fechar7{
+    position: absolute;
+    width: 30px;
+    padding: 5px 5px;
+    background-color: var(--formas);
+    margin-left: 1315px;
+    border-radius: 5px;
+    margin-top: 5px; 
+}
+.fechar:hover, .fechar1:Hover, .fechar3:Hover, .fechar4:Hover, .fechar5:Hover, 
+.fechar6:Hover, .fechar7:hover{
+    background-color: var(--primaria);
+    cursor: pointer;
+}
+@keyframes showSideBar {
+    from{ width: 67px;}
+    top{ width: 245px;}
+}
+.sideBar_btn{
+    position: fixed;
+    height: 50px;
+    margin-left: -105px;
+    margin-top: 104px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontColor);
+    transform: rotate(90deg);
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 2px;
+    border-style: solid;
+    border-color: var(--formas);
+    cursor: pointer;
+    animation-duration: 1s;
+    z-index: 2;
+}
+.closeBar{
+    position: absolute;
+    width: 30px;
+    padding: 5px 5px;
+    background-color: var(--formas);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 205px;
+    z-index: 2;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    margin-top: 400px;
+    margin-left: 0px;
+    z-index: -5;
+}
+
+/*Box aside fo proimotions and other*/
+.BoxAside{
+    position: absolute;
+    width: 300px;
+    height: 590px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-left: 1030px;
+    background: linear-gradient(to top,  var(--pureWhite),var(--white));
+    box-shadow: 0px 5px 15px var(--boxShadow);
+    border-radius: 20px;
+    z-index: 0;
+    overflow: hidden;
+}
+.pubTitle{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--fontColor);
+    margin-top: 2px;
+    margin-left: 90px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 210px;
+}
+.publicidade_adicionar{
+    width: 30px;
+    list-style: none;
+    position: absolute;
+    padding: 5px 5px;
+    border-radius: 20%;
+    box-shadow: 0px 1px 2px var(--fontColor);
+    margin-left: 10px;
+    margin-top: -7px;
+    background: linear-gradient(to right, var(--primaria), var(--boxShadow));
+}
+.publicidade_adicionar:hover{
+    background: linear-gradient(to left, var(--primaria), var(--boxShadow));
+
+}
+.internalBox_aside{
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-color: var(--fontColor);
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+.dropDown_Icon{
+    width: 60px;
+    margin-left: 120px;
+    margin-top: 220px;
+    border-radius: 5px;
+    padding: 2px 20px;
+    background-color: var(--white);
+}
+
+/*Profule*/
+.imgProfile{
+    width: 35px;
+    height: 35px;
+    margin-left: -19px;
+    margin-top: 0px;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+}
+.imgProfile:hover{
+    border: 2px solid var(--fontColor);
+}
+
+

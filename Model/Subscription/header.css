@@ -1,0 +1,293 @@
+:root{
+    --primaria: #00ffcc;
+    --fontColor: #003333; /*font*/
+    --headerBckg: #ccffff;
+    --white: #f2fff9;
+    --barColor: #cdcdcd;
+    --formas: #00cc99;/*icones*/
+    color: #00ffcc;/*formas*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    margin-left: 10px;
+}
+.navBar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primaria);
+    z-index: 5;
+    margin-top: -30px;
+}
+.navUL{
+    position:absolute;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.UlSigns{
+    list-style: none;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+}
+.homeSelected{
+    padding: 5px 15px;
+    color: var(--primaria);
+    background-color: var(--fontColor);
+    border-radius: 5px;
+    margin-top: -6.5px;
+}
+.link2, .link3, .link4, .link5, .link6{
+    padding: 5px 15px;
+    background-color: var(--primaria);
+}
+.link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover{
+    padding: 5px 15px;
+    color: var(--primaria);
+    background-color: var(--fontColor);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: -6.5px;
+}
+.logotipo{
+    position: absolute;
+    width: 150px;
+    margin-top: 45px;
+    margin-left: 75px;
+    z-index: 2;
+}
+
+header{
+    width: 100%;
+    height: 900px;
+    margin-top: 20px;
+}
+.headerback{
+    position: absolute;
+    width:  1200px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 30% 50%;
+    margin-top:  170px;
+    margin-left:  75px;
+    box-shadow: 0px 0px 0px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.inviteImage img{
+    position: absolute;
+    width: 1150px;
+    height: 380px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 130px;
+    margin-left: 105px;
+    border-radius: 20px;
+}
+.contraste{
+    position: absolute;
+    width: 1150px;
+    height: 380px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 130px;
+    margin-left: 105px;
+    border-radius: 20px;
+    background: linear-gradient(to top, var(--black-opacity), rgb(0, 0, 0, 0.0), var(--black-opacity));
+    opacity: 100%;
+}
+.opacityform{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 710px;
+    background-color: #d6ffff;
+    z-index: -3;
+}
+.partes{
+    position: absolute;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 155.5px; 
+    z-index: 2;
+    opacity: 30%;
+}
+.mozART{
+    position: absolute;
+    width: 110px;
+    margin-top: 620px;
+    margin-left: 1209px;
+    z-index: -0;
+}
+.slogan{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 455px;
+    color: var(--pureWhite);
+    text-shadow: 0px 0px 6px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30.5px;
+    font-weight: bold;
+    font-style: bold;
+    color: var(--pureWhite);
+    padding: 4px 4px;
+    border-radius: 9px;
+    border: 2px;
+    border-color: rgb(0, 255, 157);
+    z-index: 3;
+}
+.descTxt{
+    position: absolute;
+    width: 800px;
+    margin-top: 290px;
+    margin-left:  290px;
+    color: var(--pureWhite);
+    text-shadow: 0px 0px 6px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 4px 4px;
+    background: linear-gradient(to right, rgb(0, 255, 204, 0.0), rgb(0, 255, 204, 0.55), rgb(0, 255, 204, 0.0));
+    border-radius: 9px;
+    border: 2px;
+    border-color: rgb(0, 255, 157);
+    z-index: 3;
+}
+.search{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    margin-top: 340px;
+    margin-left: 375px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    z-index: 3;
+}
+.search:hover{
+    background-color: var(--pureWhite);
+    box-shadow: 0px 0px 5px rgb(0, 31, 31, 0.1);
+}
+.lupa{
+    position: absolute;
+    width: 30px;
+    margin-top: 340px;
+    margin-left: 930px;
+    padding: 2.5px 2.5px;
+    background-color: rgb(152, 255, 224); 
+    border-radius: 5px;
+    border-color: rgb(62, 245, 149); 
+    z-index: 3;
+}
+.lupa:hover{
+    background-color: rgb(0, 255, 170);
+}
+.pesquisa{
+    position:absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.destaques{
+    position: absolute;
+    width: 800px;
+    margin-top: 120px; 
+    margin-left: -7px;
+}
+.destaque{
+    position: absolute;
+    margin-top: 478px;
+    margin-left: 84px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color:  rgb(0, 71, 44);
+}
+.designG{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 86px;
+    font-size: 17px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(0, 71, 44);
+    color: rgb(0, 133, 82);
+    background-color: transparent;
+}
+.designG:hover{
+    color:  rgb(0, 71, 44);
+    border-color: rgb(0, 255, 200);
+    background-color: rgb(0, 255, 200);
+}
+.curso{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 215px;
+    font-size: 17px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(0, 71, 44);;
+    color: rgb(0, 133, 82);
+    background-color: transparent;
+}
+.curso:hover{
+    color:  rgb(0, 71, 44);
+    border-color: rgb(0, 255, 200);
+    background-color: rgb(0, 255, 200);
+}
+.Tshirt{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 290px;
+    font-size: 17px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(0, 71, 44);
+    color: rgb(0, 133, 82);
+    background-color: transparent; 
+}
+.Tshirt:hover{
+    color:  rgb(0, 71, 44);
+    border-color: rgb(0, 255, 200);
+    background-color: rgb(0, 255, 200);
+}
+
+
+

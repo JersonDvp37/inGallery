@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozart</title>
+    <link rel="stylesheet" href="PageProprerties.css">
+    <link rel="stylesheet" href="headerFeatures.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="footer2.css">
+
+    <script defer src="2ndBar.js"></script>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="content" id="content">
+            <div class="navBar" id="navBar">
+                <img src="MediaFiles/MozArt blue.png" alt="" class="logotipo">
+                <ul class="navUL" id="navUL">
+                    <a href="/home.html" class="homeSelected">Home</a>
+                    <a class="link2">Menu Geral</a>
+                    <a href="/Subscription/Host.html" class="link3">Subescrever</a>
+                    <a class="link4">Contactos</a>
+                    <ul class="UlSigns">
+                        <a href="/Signs.html" class="link5">SignIn</a>
+                        <a href="/Signs.html" class="link6">SignUp</a>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="HeaderColor" id="HeaderColor">
+                <img src="MediaFiles/vecteezy_pico-da-montanha-na-austria_1223301.jpg" alt="" class="ProfileImg2">
+                <div>
+                    <img src="Icons/notificacao.png" alt="" class="notificacao">
+                </div>
+
+                <div class="BoxAside" id="BoxAside">
+                    <span class="pubTitle">Publicidade</span>
+                    <div class="boxPub"></div>
+                    <img src="MediaFiles/abaixo.png" alt="" class="dropDown_Icon" id="dropDown_Icon"
+                        onclick="toogle_asideDown()">
+                </div>
+
+                <div class="perfil-conteiner">
+                    <img src="MediaFiles/3d-house-model-with-modern-architecture.jpg" alt="" class="profile">
+                    <label for="" class="companyName"><b></b>MozArt commpany</b></label>
+
+                    <span class="infoLine"></span>
+                    <label class="seguir">+Seguir</label>
+                    <div class="Contact_btn">
+                        <li class="comunicar" onclick="toogle_contactar()">Contactar</li>
+                        <img src="MediaFiles/abaixo.png" alt="" class="imgSelection" id="imgSelection">
+
+                        <div class="contentBox" id="contentBox" onmouseout="toogle_fecharContactar()">
+                            <ul class="ulContent">
+                                <li class="mensagem1">Jerson Tomas</li>
+                                <li class="tendencias2">Gerson Tomas</li>
+                                <li class="galeria3">Nenhuma</li>
+                                <li class="eventos4">Nenhuma</li>
+                                <li class="tiktok">Mz Company</li>
+                                <li class="portifolio5">842340266</li>
+                                <li class="contactos6">873726691</li>
+                            </ul>
+                            <ul class="imgComunicar">
+                                <img src="MediaFiles/whatsapp.png" alt="" class="imgWhatsapp" id="imgMsg1">
+                                <img src="MediaFiles/facebook (1).png" alt="" class="imgFacebook" id="imgtendencia">
+                                <img src="MediaFiles/instagram (1).png" alt="" class="imgInstagram" id="imggaleria">
+                                <img src="MediaFiles/twitter.png" alt="" class="imgTwiter" id="c">
+                                <img src="MediaFiles/tik-tok.png" alt="" class="imgTiktok">
+                                <img src="MediaFiles/chamar.png" alt="" class="imgChamar" id="imgcontactos">
+                                <img src="MediaFiles/chamar.png" alt="" class="imgChamar2">
+                            </ul>
+                        </div>
+                    </div>
+                    <label class="seguidores">Seguidores: 2000k</label>
+                </div>
+
+                <div class="aboutSearch">
+                    <ul class="barra_pesquisa">
+
+                        <div class="categoria" id="categoria" onclick="categoria_Choose()">
+                            <img src="MediaFiles/categoria.png" alt="" class="categoriaImg" id="CategoryImg">
+                            <span id="initialText_categoria" style="width: 500px;"
+                                onclick="categoria_Choose()">Categoria</span>
+                            <img src="MediaFiles/abaixo.png" alt="" class="caret" id="caret">
+                            <li class="lineBetween"></li>
+                        </div>
+                        <ul class="dropDown_Categoria" id="caixa_categoria">
+
+                            <ul class="textCat">
+                                <li onclick="cat_panfleto()" id="panfletos">Panfletos</li>
+                                <li onclick="cat_templates()" id="templates">Templates</li>
+                                <li onclick="cat_logotipos()" id="logotipos">Logotipos</li>
+                                <li onclick="cat_cartoesVisitas()" id="cartoesVisitas">Cartoes de visita</li>
+                                <li onclick="cat_curiculos()" id="curiculos">Curiculos</li>
+                                <li onclick="cat_tshirt()" id="tshirt">T-shirt Design</li>
+                            </ul>
+                            <ul class="img_categoria" id="img_categoria">
+                                <img src="MediaFiles/folhetos.png" alt="" id="imgPanfletos">
+                                <img src="MediaFiles/modelo.png" alt="" id="imgTemplates">
+                                <img src="MediaFiles/logo-design.png" alt="" id="imgLogotipos">
+                                <img src="MediaFiles/cartao-de-visitas.png" alt="" id="imgCartoesV">
+                                <img src="MediaFiles/portfolio.png" alt="" id="imgCuriculos">
+                                <img src="MediaFiles/camiseta.png" alt="" id="imgTshirt">
+                            </ul>
+                        </ul>
+
+                        <input type="search" class="input_pesquisar" id=""
+                            placeholder="Pesquisar por servicos e produtos">
+                        <img src="/MediaFiles/lupa.png" class="imgPesquisa">
+                    </ul>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div class="navBarWidth">
+                    <div class="second-navbar-conteiner" id="2ndNav-bar">
+                        <span class="MozArt2" id="MozArt2"><b>Menu</b></span>
+                        <img src="MediaFiles/x.png" alt="" class="closeBar" onclick="toogle_CloseSideBar()">
+                        <span class="Mozart_navBar" onclick="toogle_sideBar()"><b>M</b></span>
+                        <ul class="ndNavbar_conteiner" id="ndNavbar_conteiner">
+                            <li class="mensagem" id="mensagem" onclick="toogle_mensagem()">Chat</li>
+                            <li class="tendencias" id="tendencias" onclick="toogle_tendencia()">Tendencias</li>
+                            <li class="galerias" id="galeria" onclick="toogle_galeria()">Galeria</li>
+                            <li class="eventos" id="eventos" onclick="toogle_evento()">Eventos</li>
+                            <li class="portifolio" id="portifolio" onclick="toogle_portifolio()">Portifolio</li>
+                            <li class="contactos" id="contactos" onclick="toogle_contacto()">Contactos</li>
+                            <li class="sobre" id="sobre" onclick="toogle_sobre()"> Sobre</li>
+                        </ul>
+                        <ul class="imgcategoria" id="imgIcones">
+                            <img src="MediaFiles/mensagens.png" alt="" class="imgMsg" id="imgMsgs"
+                                onclick="toogle_mensagem()">
+                            <img src="MediaFiles/tendencia.png" alt="" class="imgtendencia" id="imgtendenciass"
+                                onclick="toogle_tendencia()">
+                            <img src="MediaFiles/galeria.png" alt="" class="imggaleria" id="imggalerias"
+                                onclick="toogle_galeria()">>
+                            <img src="MediaFiles/evento.png" alt="" class="imgeventos" id="imgeventos"
+                                onclick="toogle_evento()">
+                            <img src="MediaFiles/portfolio.png" alt="" class="imgcontactos" id="imgContactos"
+                                onclick="toogle_portifolio()">
+                            <img src="MediaFiles/telefone.png" alt="" class="imgportifolio" id="imgportifolio"
+                                onclick="toogle_contacto()">
+                            <img src="MediaFiles/info.png" alt="" class="imgsobre" id="imgsobre"
+                                onclick="toogle_sobre()">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profileInfo_box">
+
+                    <ul class="boxDetails">
+                        <ul class="bullets">
+                            <li><b>Categoria</b></li>
+                            <li class="detailProperties">Design e Artes</li>
+                        </ul>
+                        <ul class="bullets2">
+                            <li><b>Atividade</b></li>
+                            <li class="detailProperties">Disponivel</li>
+                        </ul>
+                        <ul class="bullets3">
+                            <li><b>Experiencia</b></li>
+                            <li class="detailProperties">2 anos</li>
+                        </ul>
+                        <ul class="bullets4">
+                            <li><b>Localizacao</b></li>
+                            <li class="detailProperties">Machava</li>
+                        </ul>
+                    </ul>
+                    <span class="bara"></span>
+                    <span class="bara2"></span>
+                    <span class="bara3"></span>
+
+                    <ul class="icones">
+                        <li><img src="MediaFiles/cardapio.png" alt="" class="imgCategoria"></li>
+                        <li><img src="MediaFiles/alternancia.png" alt="" class="imgDisponibilidade"></li>
+                        <li><img src="MediaFiles/experiencia.png" alt="" class="imgExperiencia"></li>
+                        <li><img src="MediaFiles/pin-de-localizacao.png" alt="" class="imgLocalizacao"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar-conteiner-btnelements" id="navbar-conteiner-btnelements1">
+
+            <div class="mensagens_frame" id="mensagens_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar" id="close" onclick="fechar()">
+                <span></span>
+            </div>
+            <div class="tendencias_frame" id="tendencias_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar1" id="close1" onclick="toogle_fechar1()">
+                <span for="">trends</span>
+            </div>
+            <div class="galerias_frame" id="galerias_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar2" id="close2" onclick="toogle_fechar2()">
+                <span for="">Galeria</span>
+            </div>
+            <div class="eventos_frame" id="eventos_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar3" id="close3" onclick="toogle_fechar3()">
+                <span for="">Eventos</span>
+            </div>
+            <div class="portifolio_frame" id="portifolio_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar4" id="close4" onclick="toogle_fechar4()">
+                <span for=""></span>
+                <span for="">Portifolio</span>
+            </div>
+            <div class="contactos_frame" id="contactos_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar6" id="close6" onclick="toogle_fechar5()">
+            </div>
+            <div class="sobre_frame" id="sobre_frame">
+                <img src="MediaFiles/x.png" alt="" class="fechar7" id="close7" onclick="toogle_fechar6()">
+                <span for="">Sobre</span>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="aboutUs">
+            <span class="servicos">
+                <b>Nossos Servicos</b> <br>
+                <span class="underline"></span>
+            </span>
+            <div class="allBoxesContent">
+                <div class="aboutBoxes">
+                    <p class="aboutBox1">
+                        <label for="">
+                            <img src="MediaFiles/ferramentas-de-design.png" alt="" class="imgCriativo">
+                            <b class="titulo">Flayer Design</b>
+                        </label>
+                    <pre class="texto">
+                    Design 100% orginal
+                </pre>
+                    </p>
+                </div>
+                <div class="aboutBoxes2">
+                    <p class="aboutBox1">
+                        <label for="">
+                            <img src="MediaFiles/logo-design.png" alt="" class="imgCriativo">
+                            <b class="titulo">Logo Design</b>
+                        </label>
+                    <pre class="texto">
+                    Design 100% orginal
+                </pre>
+                    </p>
+                </div>
+                <div class="aboutBoxes3">
+                    <p class="aboutBox1">
+                        <label for="">
+                            <img src="MediaFiles/camiseta.png" alt="" class="imgCriativo">
+                            <b class="titulo">T-shirt Design</b>
+                        </label>
+                    <pre class="texto">
+                    Design 100% orginal
+                </pre>
+                    </p>
+                </div>
+                <div class="aboutBoxes4">
+                    <p class="aboutBox1">
+                        <label for="">
+                            <img src="MediaFiles/cartao-de-visitas.png" alt="" class="imgCriativo">
+                            <b class="titulo">Cartao de Visita</b>
+                        </label>
+                    <pre class="texto">
+                    Design 100% orginal
+                </pre>
+                    </p>
+                </div>
+
+                <div class="aboutBoxes4">
+                    <p class="aboutBox1">
+                        <label for="">
+                            <img src="MediaFiles/portfolio2.png" alt="" class="imgCriativo">
+                            <b class="titulo">Curiculos</b>
+                        </label>
+                    <pre class="texto">
+                    Design 100% orginal
+                </pre>
+                    </p>
+                </div>
+
+                <span class="servicos3">
+                    <p>Solicitar nossos servicos</p><br>
+                    <span class="underline2"></span>
+                    <span class="callText">
+                    </span>
+                    <ul class="tempo_resposta">
+                        <li class="lineSolicitar"></li>
+                        <li class="umDia">Tempo maximo 24horas</li>
+                    </ul>
+                    <span class="Join_btn2">Solicitar</span>
+                </span>
+            </div>
+        </div>
+
+
+
+        <label for="" class="prodPopulares">Ultimas requisicoes</label>
+        <div class="maisProd">
+            <li class="prod1">
+                <img src="produtos/Design promotion Flayer.jpg" alt="" class="designGrafico">
+                <ul class="prodDsc1">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp"> Explorar </a>
+            </li>
+
+            <li class="prod2">
+                <img src="produtos/3d-house-model-with-modern-architecture.jpg" alt="" class="plantas3D">
+                <ul class="prodDsc2">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp2"> Explorar </a>
+            </li>
+
+            <li class="prod3">
+                <img src="produtos/T-shirt design1.jpg" alt="" class="designCamisetes">
+                <ul class="prodDsc3">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp3"> Explorar </a>
+            </li>
+
+            <li class="prod4">
+                <img src="produtos/colar.jpeg" alt="" class="colares">
+                <ul class="prodDsc4">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp4"> Explorar </a>
+            </li>
+
+            <li class="prod5">
+                <img src="produtos/celulares.jpg" alt="" class="celulares">
+                <ul class="prodDsc5">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp5"> Explorar </a>
+            </li>
+        </div>
+
+        <li class="round-element00"></li>
+        <li class="round-element22"></li>
+
+        <div class="maisProd2">
+            <li class="prod1">
+                <img src="produtos/Design promotion Flayer.jpg" alt="" class="designGrafico">
+                <ul class="prodDsc1">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp"> Explorar </a>
+            </li>
+
+            <li class="prod2">
+                <img src="produtos/3d-house-model-with-modern-architecture.jpg" alt="" class="plantas3D">
+                <ul class="prodDsc2">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp2"> Explorar </a>
+            </li>
+
+            <li class="prod3">
+                <img src="produtos/T-shirt design1.jpg" alt="" class="designCamisetes">
+                <ul class="prodDsc3">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp3"> Explorar </a>
+            </li>
+
+            <li class="prod4">
+                <img src="produtos/colar.jpeg" alt="" class="colares">
+                <ul class="prodDsc4">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp4"> Explorar </a>
+            </li>
+
+            <li class="prod5">
+                <img src="produtos/celulares.jpg" alt="" class="celulares">
+                <ul class="prodDsc5">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp5"> Explorar </a>
+            </li>
+        </div>
+
+        <div class="maisProd4">
+            <li class="prod1">
+                <img src="produtos/Design promotion Flayer.jpg" alt="" class="designGrafico">
+                <ul class="prodDsc1">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp"> Explorar </a>
+            </li>
+
+            <li class="prod2">
+                <img src="produtos/3d-house-model-with-modern-architecture.jpg" alt="" class="plantas3D">
+                <ul class="prodDsc2">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp2"> Explorar </a>
+            </li>
+
+            <li class="prod3">
+                <img src="produtos/T-shirt design1.jpg" alt="" class="designCamisetes">
+                <ul class="prodDsc3">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp3"> Explorar </a>
+            </li>
+
+            <li class="prod4">
+                <img src="produtos/colar.jpeg" alt="" class="colares">
+                <ul class="prodDsc4">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp4"> Explorar </a>
+            </li>
+
+            <li class="prod5">
+                <img src="produtos/celulares.jpg" alt="" class="celulares">
+                <ul class="prodDsc5">
+                    <li>
+                        <h4>MozArt</h4>
+                    </li>
+                    <li style="font-size: 15px;">Design</li>
+                </ul>
+                <a href="nnn" class="Exp5"> Explorar </a>
+            </li>
+        </div>
+
+
+        <div>
+            <label class="templates">Modelos exclusivos que voce pode adquirir</label>
+            <span class="templates1">Uma vez adquiridos sao exclusivas ao comprador</span>
+
+            <ul class="maisProd3">
+                <li class="temp1">
+                    <img src="produtos/Bolo.jpeg" alt="" class="imgtemp1">
+                    <ul class="prodtempDsc1">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp"> Explorar </a>
+                </li>
+
+                <li class="temp2">
+                    <img src="produtos/Katia Salgados.jpg" alt="" class="imgtemp2">
+                    <ul class="prodtempDsc2">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp2"> Explorar </a>
+                </li>
+
+                <li class="temp3">
+                    <img src="produtos/pizza.jpg" alt="" class="imgtemp3">
+                    <ul class="prodtempDsc3">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp3"> Explorar </a>
+                </li>
+
+                <li class="temp4">
+                    <img src="produtos/perfume_vermekho.jpg" alt="" class="imgtemp4">
+                    <ul class="prodtempDsc4">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp4"> Explorar </a>
+                </li>
+
+                <li class="temp5">
+                    <img src="produtos/LogoArt.jpg" alt="" class="imgtemp5">
+                    <ul class="prodtempDsc5">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp5"> Explorar </a>
+                </li>
+
+                <li class="temp6">
+                    <img src="produtos/men's_shoes.jpeg" alt="" class="imgtemp6">
+                    <ul class="prodtempDsc6">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp6"> Explorar </a>
+                </li>
+            </ul>
+
+            <ul class="maisProd33">
+                <li class="temp1">
+                    <img src="produtos/Bolo.jpeg" alt="" class="imgtemp1">
+                    <ul class="prodtempDsc1">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp"> Explorar </a>
+                </li>
+
+                <li class="temp2">
+                    <img src="produtos/Katia Salgados.jpg" alt="" class="imgtemp2">
+                    <ul class="prodtempDsc2">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp2"> Explorar </a>
+                </li>
+
+                <li class="temp3">
+                    <img src="produtos/pizza.jpg" alt="" class="imgtemp3">
+                    <ul class="prodtempDsc3">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp3"> Explorar </a>
+                </li>
+
+                <li class="temp4">
+                    <img src="produtos/perfume_vermekho.jpg" alt="" class="imgtemp4">
+                    <ul class="prodtempDsc4">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp4"> Explorar </a>
+                </li>
+
+                <li class="temp5">
+                    <img src="produtos/LogoArt.jpg" alt="" class="imgtemp5">
+                    <ul class="prodtempDsc5">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp5"> Explorar </a>
+                </li>
+
+                <li class="temp6">
+                    <img src="produtos/men's_shoes.jpeg" alt="" class="imgtemp6">
+                    <ul class="prodtempDsc6">
+                        <li>
+                            <h4>MozArt</h4>
+                        </li>
+                        <li style="font-size: 15px;">Design</li>
+                    </ul>
+                    <a href="nnn" class="tempExp6"> Explorar </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="Spaces">
+            <span class="callBox2"></span>
+            <img src="produtos/DesignInvite.jpg" alt="" class="callImg">
+            <span class="callImgback"></span>
+
+            <div class="Logos">
+                <div class="logo_Slide" id="logo_Slide" onclick="toogle_pause()">
+                    <img src="Icons//ferramenta-caneta.png" alt="">
+                    <img src="Icons/designer-de-web.png" alt="">
+                    <img src="Icons/sala-de-estar (1).png" alt="">
+                    <img src="Icons/ilustracao.png" alt="">
+                    <img src="Icons/photo-camera.png" alt="">
+                    <img src="Icons/photoshop.png" alt="">
+                    <img src="Icons/adobe-illustrator.png" alt="">
+                    <img src="Icons/indesign.png" alt="">
+                    <img src="Icons/icons8-corel-draw-67.png" alt="">
+                    <img src="Icons/logotipo-do-google-sketchup.png" alt="">
+                    <img src="Icons/icons8-archicad-24.png" alt="">
+                </div>
+            </div>
+            <script>
+                var copiar_imagens = document.querySelector('.logo_Slide').cloneNode(true);
+                document.querySelector('.Logos').appendChild(copiar_imagens);              
+            </script>
+
+            <span class="servicos2">
+                <span class="inviteTitle">Voce trabalha com Design/artes Visiuais?</span><br>
+                <span class="underline2"></span>
+                <span class="callText">Voce trabalha com Design: grafico, UI e UX, de interiores, e outras areas
+                    e quer tornar conhecido o seu trabalho? <br>
+                    O <b>LinkShop</b> oferece um espaco especifico para voce.
+                </span>
+                <span class="Join_btn"> Junta-te a nos</span>
+            </span>
+        </div>
+        <form action="" method="post">
+            <li class="boxBack"></li>
+            <div class="comentSection">
+                <span class="feedBack">
+                    Deixe o seu feedback
+                    <li class="underline_feedbk"></li>
+                </span>
+                <ul class="inputName">
+                    <li>Nome</li>
+                    <li>Email</li>
+                </ul>
+                <span class="comentNome">Comentarios</span>
+                <ul class="inputs">
+                    <input type="text" class="inputNome" placeholder="Insira o nome">
+                    <input type="text" name="" id="" class="inputEmail" placeholder="Insira o Email/contacto">
+                    <textarea type="text" class="inputComentario" placeholder="comentarios"></textarea>
+                </ul>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footerLine">
+            <span class="footerlogo">
+                <img src="MediaFiles/MozArt blue.png" alt="logotipo MozArt" class="logoMArt">
+                <h3 class="mzArt">MozArt</h3>
+                <span class="mzArtDsc">Graphic Design Services</span>
+            </span>
+            <ul class="ImgAdress">
+                <a href=""><img src="MediaFiles/whatsapp.png" alt="" class="img1"></a>
+                <a href=""><img src="MediaFiles/facebook (1).png" alt="" class="img2"></a>
+                <a href=""><img src="MediaFiles/instagram (1).png" alt="" class="img3"></a>
+                <a href=""><img src="MediaFiles/gmail.png" alt="" class="img4"></a>
+            </ul>
+            <ul class="contactos2">
+                <li class="nr1">842340266 | 87372691</li>
+            </ul>
+            <div class="copyright">
+                &copy;<span>2024</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
